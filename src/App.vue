@@ -6,6 +6,7 @@ import axios from 'axios';
 export default {
     data() {
         return {
+            
 
         };
     },
@@ -14,17 +15,6 @@ export default {
         AppMain,
         AppFooter
     },  
-    methods: {
-
-    },
-    mounted(){
-        axios.get('https://rickandmortyapi.com/api/character') // URL DELL'API
-            .then((response) => {
-                console.log(response);                         // Stampo il risultato della chiamata dell'api
-                console.log(response.data.results);            // STUDIANDO il risultato trovo il percorso da seguire
-
-            })
-    }
 }
 </script>
 
